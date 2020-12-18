@@ -1,10 +1,11 @@
 import React from 'react';
+import Navbar from '../components/Navbar';
 import { Link, Route, Switch } from 'react-router-dom';
 
 const App = () => {
     return (
         <div>
-            <h1>Hi world!</h1>
+            <Navbar />
         </div>
     );
 };
