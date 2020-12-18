@@ -14,15 +14,21 @@ const Category = () => {
     const { url, path } = useRouteMatch();
     return (
         <div>
-            <ul>
-                <li>
-                    <Link to={`${url}/shoes`}>Shoes</Link>
+            <ul className='divide-y divide-gray-200'>
+                <li className='flex py-4 ml-3'>
+                    <Link className='text-sm font-medium text-gray-900' to={`${url}/shoes`}>
+                        Shoes
+                    </Link>
                 </li>
-                <li>
-                    <Link to={`${url}/boots`}>Boots</Link>
+                <li className='flex py-4 ml-3'>
+                    <Link className='text-sm font-medium text-gray-900' to={`${url}/boots`}>
+                        Boots
+                    </Link>
                 </li>
-                <li>
-                    <Link to={`${url}/footwear`}>Footwear</Link>
+                <li className='flex py-4 ml-3'>
+                    <Link className='text-sm font-medium text-gray-900' to={`${url}/footwear`}>
+                        Footwear
+                    </Link>
                 </li>
             </ul>
             <Route path={`${path}/:name`}>
